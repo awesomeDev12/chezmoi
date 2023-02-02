@@ -1,6 +1,7 @@
-# Chezmoi dot files
+# Chezmoi dotfiles
 
 First, install chezmoi
+
 For Arch
 ```
 pacman -sS chezmoi
