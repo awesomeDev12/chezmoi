@@ -1,0 +1,4 @@
+# .chezmoiignore
+
+# Ignore the README file for github repo
+README.md
