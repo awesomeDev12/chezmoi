@@ -10,7 +10,7 @@ sudo pacman -S chezmoi
 
 To clone this repository
 ```
-git clone https://github.com/awesomeDev12/chezmoi.git  ~/.local/share/
+git clone https://github.com/awesomeDev12/chezmoi.git  ~/.local/share/chezmoi/
 ```
 
 To see difference
