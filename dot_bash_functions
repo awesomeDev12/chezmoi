@@ -1,0 +1,8 @@
+
+# Functions Begin
+
+function hg() {
+    history | grep "$1";
+}
+
+# Functions End

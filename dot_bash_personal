@@ -1,0 +1,21 @@
+
+# Xmod 
+
+### Swap Caps lock and Escape keys
+# xmodmap -e "keycode 9 = Caps_Lock"; xmodmap -e "keycode 66 = Escape"
+
+### Undo the swap action
+# xmodmap -e "keycode 66 = Caps_Lock"; xmodmap -e "keycode 9 = Escape"
+
+# Swap Capslock and Esc keys
+# setxkbmap -option caps:swapescape
+
+# Add pylint to path
+export PATH=$PATH:/home/${USER}/.local/bin/pylint
+# export PATH=$PATH:/home/darklord/.local/bin/pylint
+#
+# Can add to  coc-config 
+#
+#   "python.linting.pylintPath": "~/venvs/.nvim-venv/bin/pylint"
+
+

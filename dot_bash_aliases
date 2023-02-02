@@ -1,0 +1,64 @@
+
+# Aliases Begin
+
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias gs='git status'
+
+alias ga='git add'
+
+alias gaa='git add --all'
+
+alias gc='git commit'
+
+alias gl='git log --oneline'
+
+alias gb='git checkout -b'
+
+alias gd='git diff'
+
+alias gp='git push'
+
+alias ..='cd ..;pwd'
+
+alias ...='cd ../..;pwd'
+
+alias ....='cd ../../..;pwd'
+
+alias c='clear'
+
+alias h='history'
+
+alias tree='tree --dirsfirst -F'
+
+alias mkdir='mkdir -p -v'
+
+alias jan='cal -m 01'
+alias feb='cal -m 02'
+alias mar='cal -m 03'
+alias apr='cal -m 04'
+alias may='cal -m 05'
+alias jun='cal -m 06'
+alias jul='cal -m 07'
+alias aug='cal -m 08'
+alias sep='cal -m 09'
+alias oct='cal -m 10'
+alias nov='cal -m 11'
+alias dec='cal -m 12'
+
+# ww3m browser
+alias w3m='w3m duckduckgo.com'
+
+# watch output
+alias wao='watch -n 0.5 cat output.txt'
+
+# python virtualenv
+alias act='source ~/venvs/.nvim-venv/bin/activate'
+
+
+# Aliases End
+
