@@ -1,1 +1,4 @@
 # ~/.bash_general
+
+# Set EDITOR env variable to neovim
+export EDITOR=nvim
