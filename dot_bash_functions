@@ -5,4 +5,42 @@ function hg() {
     history | grep "$1";
 }
 
+# function ranger {
+#     local IFS=$'\t\n'
+#     local tempfile="$(mktemp -t tmp.XXXXXX)"
+#     local ranger_cmd=(
+#         command
+#         ranger
+#         --cmd="map Q chain shell echo -n %d > "$tempfile"; quitall"
+#     )
+    
+#     ${ranger_cmd[@]} "$@"
+#     if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+#         cd -- "$(cat "$tempfile")" || return
+#     fi
+#     command rm -f -- "$tempfile" 2>/dev/null
+# }
+
+
+function ran {
+    echo "NO" > ~/.rangedirchange
+
+    ranger
+
+    if [[ "$(cat -- ~/.rangedirchange)" = "YES" ]]; then
+ 
+        if [[ -f ~/.rangedir ]] && [[ "$(cat -- ~/.rangedir)" != "$(echo -n `pwd`)" ]]; then
+            cd -- "$(cat -- ~/.rangedir)" 
+            # echo "Directory changed to "+"$(cat -- ~/.rangedir)" 
+            echo "NO" > ~/.rangedirchange
+        fi
+
+    # else
+    #     echo "Directory Not Changed"
+
+    fi
+
+
+}
+
 # Functions End

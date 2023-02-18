@@ -1,14 +1,1 @@
-
-# Prompt string modification
-PS1="${PS1::-3} \n$ "
-
-# Run CLI commands in VI (not sure how it works)
-set -o vi
-
-
-
-
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+# .bash_prestart

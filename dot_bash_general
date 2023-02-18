@@ -1,4 +1,17 @@
 # ~/.bash_general
 
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# Prompt string modification
+PS1="${PS1::-3} \n$ "
+
+# Run CLI commands in VI (not sure how it works)
+set -o vi
+
 # Set EDITOR env variable to neovim
 export EDITOR=nvim
+
+# Add pylint to path
+export PATH=$PATH:/home/${USER}/.local/bin/pylint
