@@ -23,16 +23,16 @@ function hg() {
 
 
 function ran {
-    echo "NO" > ~/.rangedirchange
+    echo "NO" > ~/.rangerdirchange
 
     ranger
 
-    if [[ "$(cat -- ~/.rangedirchange)" = "YES" ]]; then
+    if [[ "$(cat -- ~/.rangerdirchange)" = "YES" ]]; then
  
-        if [[ -f ~/.rangedir ]] && [[ "$(cat -- ~/.rangedir)" != "$(echo -n `pwd`)" ]]; then
-            cd -- "$(cat -- ~/.rangedir)" 
-            # echo "Directory changed to "+"$(cat -- ~/.rangedir)" 
-            echo "NO" > ~/.rangedirchange
+        if [[ -f ~/.rangerdir ]] && [[ "$(cat -- ~/.rangerdir)" != "$(echo -n `pwd`)" ]]; then
+            cd -- "$(cat -- ~/.rangerdir)" 
+            # echo "Directory changed to "+"$(cat -- ~/.rangerdir)" 
+            echo "NO" > ~/.rangerdirchange
         fi
 
     # else
