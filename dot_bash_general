@@ -15,3 +15,7 @@ export EDITOR=nvim
 
 # Add pylint to path
 export PATH=$PATH:/home/${USER}/.local/bin/pylint
+
+# Add to flutter bin to path 
+# for flutter(AUR version)
+export PATH=/opt/flutter/bin:$PATH
