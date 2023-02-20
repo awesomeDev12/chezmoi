@@ -16,6 +16,15 @@ export EDITOR=nvim
 # Add pylint to path
 export PATH=$PATH:/home/${USER}/.local/bin/pylint
 
-# Add to flutter bin to path 
+# Add to flutter bin to path if distro is Arch Linux
 # for flutter(AUR version)
-export PATH=/opt/flutter/bin:$PATH
+
+# Check if the operating system is Arch Linux
+if [[ -f "/etc/arch-release" ]]; then
+  # Add /opt/flutter/bin to the PATH
+  export PATH=/opt/flutter/bin:$PATH
+  # echo "Added /opt/flutter/bin to PATH"
+fi
+
+
+
