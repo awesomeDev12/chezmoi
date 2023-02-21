@@ -160,6 +160,12 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
+# bash_test
+if [ -f ~/.bash_test ]; then
+    . ~/.bash_test
+fi
+
+
 
 # Device specific
 
@@ -175,7 +181,6 @@ if [ -f ~/.bash_arch_laptop ]; then
 fi
 
 # Device sepecific end
-
 
 
 
