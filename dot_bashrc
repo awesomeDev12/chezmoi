@@ -161,6 +161,20 @@ if [ -f ~/.bash_functions ]; then
 fi
 
 
+# Device specific
+
+# bash_ubuntu_desktop
+if [ -f ~/.bash_ubuntu_desktop ]; then
+    . ~/.bash_ubuntu_desktop
+fi
+
+
+# bash_arch_laptop
+if [ -f ~/.bash_arch_laptop ]; then
+    . ~/.bash_arch_laptop
+fi
+
+# Device sepecific end
 
 
 
